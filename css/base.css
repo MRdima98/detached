@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Lycanthrope';
+    src: url("/fonts/Lycanthrope.ttf");
+  }
+  @font-face {
+    font-family: 'Mironta';
+    src: url("/fonts/Mironta.ttf");
+  }
+}

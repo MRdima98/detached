@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Swap our for actual link-->
+    <link rel="canonical" href="https://www.detached.it">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!--Social Media Display-->
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="/images/social.jpg" />
+    <meta property="og:image:secure_url" content="/images/social.jpg" />
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!--Favicons-->
+    <!--Use https://realfavicongenerator.net/ to generate and download your favicons-->
+
+    <!--<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">-->
+    <!--<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v1">-->
+    <!--<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">-->
+    <!--<link rel="manifest" href="/site.webmanifest">-->
+    <!--<meta name="msapplication-TileColor" content="#da532c">-->
+    <!--<meta name="theme-color" content="#ffffff">-->
+
+    <!-- Preload -->
+    <!--<link rel="preload" as="image" href="/images/landing-m.webp">-->
+    <!--<link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-regular.woff2" crossorigin>-->
+    <!--<link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-700.woff2" crossorigin>-->
+
+    <title>Detached band</title>
+</head>
+
+<body class="flex flex-col items-center bg-black text-white">
+    <header class="flex justify-between font-lycan lg:text-3xl text-2xl mt-10 w-8/12">
+        <a href="index.html">Detached</a>
+        <div class="md:flex gap-5 hidden">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="discography.html">Discography</a>
+            <a href="contacts.html">Contacts</a>
+        </div>
+        <div class="md:hidden">
+            <img src="svgs/menu.svg" alt="hambuger menu icon" height="36" width="36">
+        </div>
+    </header>
+    <picture class="flex justify-center w-8/12 mt-6">
+        <source srcset="/images/band.png" media="(orientation: portrait)" />
+        <img src="/images/band-crop.png" alt="">
+    </picture>
+    <div
+        class="flex md:flex-col md:items-center gap-3 md:absolute 2xl:top-[150px] 2xl:right-[380px] lg:top-[120px] lg:right-[280px] md:top-[120px] md:right-[220px] flex-row mt-5 md:mt-0">
+
+        <a href="https://www.youtube.com/@detached.project/videos">
+            <img class="hidden xl:inline" src="svgs/buy_album.svg" alt="youtube redirect button" width="150"
+                height="150">
+            <img class="inline xl:hidden" src="svgs/buy_album.svg" alt="youtube redirect button" width="100"
+                height="100">
+        </a>
+        <a href="https://www.youtube.com/@detached.project/videos">
+            <img class="hidden xl:inline" src="svgs/yt.svg" alt="youtube redirect button" width="72" height="72">
+            <img class="inline xl:hidden" src="svgs/yt.svg" alt="youtube redirect button" width="60" height="60">
+        </a>
+        <a href="https://www.youtube.com/@detached.project/videos">
+            <img class="hidden xl:inline" src="svgs/spotify.svg" alt="youtube redirect button" width="60" height="60">
+            <img class="inline xl:hidden" src="svgs/spotify.svg" alt="youtube redirect button" width="40" height="40">
+        </a>
+    </div>
+    <section class="flex flex-col items-center w-8/12 mt-20">
+        <h2 class="font-lycan w-full lg:text-5xl text-3xl">
+            Youtube channel
+        </h2>
+        <div class="relative w-full pt-[56.25%]">
+            <iframe class="absolute top-0 left-0 bottom-0 right-0 w-full h-full border-none"
+                src="https://www.youtube.com/embed/MxPLPgiNzrw" title="Detached - Help (Official Video)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+    <section class="flex flex-col w-8/12">
+        <h2 class="font-lycan lg:text-5xl text-3xl mt-12">
+            Coming Soon
+        </h2>
+        <div class="flex w-full">
+            <div class="flex flex-col gap-5 justify-around w-1/2 font-mironta">
+                <div class="flex flex-col justify-around bg-white w-10/12 h-1/4 rounded-2xl opacity-60 text-black">
+                    <h3 class="lg:text-4xl text-2xl ml-10"> <strong> Live music </strong> </h3>
+                    <div class="flex justify-between ml-10 text-xl">
+                        <div class="flex flex-col">
+                            <span><strong>Modena</strong></span>
+                            <span>Piazza Roma</span>
+                        </div>
+                        <div class="flex flex-col mr-10">
+                            <span><strong>06/10</strong></span>
+                            <span>h. 21.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-around bg-white w-10/12 h-1/4 rounded-2xl opacity-50 text-black">
+                    <h3 class="lg:text-4xl text-2xl">New album</h3>
+                </div>
+                <div class="flex flex-col justify-around bg-white w-10/12 h-1/4 rounded-2xl opacity-40 text-black">
+                    <h3 class="lg:text-4xl text-2xl">New single</h3>
+                </div>
+            </div>
+            <div class="w-1/2">
+                <img src="images/clock.png" alt="man with a clock in his hand inside a mirror">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
