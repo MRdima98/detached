@@ -21,6 +21,7 @@
     <meta property="og:image:secure_url" content="/images/social.jpg" />
 
     <link rel="stylesheet" href="/css/style.css">
+    <script src="js/index.js"></script>
 
     <!--Favicons-->
     <!--Use https://realfavicongenerator.net/ to generate and download your favicons-->
@@ -40,16 +41,19 @@
     <title>Detached band</title>
 </head>
 
-<body class="flex flex-col items-center text-white bg-[url('/images/home.png')]">
-    <header class="flex justify-between font-lycan lg:text-3xl text-2xl mt-10 w-8/12">
+<body class="flex flex-col items-center text-white bg-[url('/images/cloud.webp')] bg-cover bg-no-repeat">
+    <header class="flex justify-between font-lycan 2xl:text-5xl xl:text-4xl lg:text-3xl text-2xl mt-10 w-8/12">
         <a href="index.html">Detached</a>
-        <div class="md:flex gap-5 hidden">
-            <a href="index.html">Home</a>
+        <div id="menu"
+            class="flex md:flex-row md:w-auto md:relative md:gap-5 !filter-none !blur-none flex-col hidden w-1/2 absolute top-0 right-0 h-screen items-center text-5xl bg-black gap-10">
+            <!--transition -->
+            <!--translate-x-80 hidden-->
+            <a class="md:mt-0 mt-24" href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="discography.html">Discography</a>
             <a href="contacts.html">Contacts</a>
         </div>
-        <div class="md:hidden">
+        <div id="menu-button" class="md:hidden">
             <img src="svgs/menu.svg" alt="hambuger menu icon" height="36" width="36">
         </div>
     </header>
@@ -81,7 +85,8 @@
         </h2>
         <div class="relative w-full pt-[56.25%]">
             <iframe class="absolute top-0 left-0 bottom-0 right-0 w-full h-full border-none"
-                src="https://www.youtube.com/embed/MxPLPgiNzrw" title="Detached - Help (Official Video)" frameborder="0"
+                src="https://www.youtube.com/embed/MxPLPgiNzrw?wmode=opaque" title="Detached - Help (Official Video)"
+                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
