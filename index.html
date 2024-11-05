@@ -42,16 +42,17 @@
 </head>
 
 <body class="flex flex-col items-center text-white bg-[url('/images/cloud.webp')] bg-cover bg-no-repeat">
-    <header class="flex justify-between font-lycan 2xl:text-5xl xl:text-4xl lg:text-3xl text-2xl mt-10 w-8/12">
+    <header class="flex justify-between font-lycan 2xl:text-5xl xl:text-4xl md:text-3xl text-5xl mt-10 w-8/12">
         <a href="index.html">Detached</a>
         <div id="menu"
-            class="flex md:flex-row md:w-auto md:relative md:gap-5 !filter-none !blur-none flex-col hidden w-1/2 absolute top-0 right-0 h-screen items-center text-5xl bg-black gap-10">
+            class="md:flex md:flex-row md:w-auto md:h-auto md:relative md:gap-5 flex flex-col hidden w-full absolute top-0 right-0 h-screen items-end gap-10 z-10"
+            style="backdrop-filter: blur(10px);">
             <!--transition -->
             <!--translate-x-80 hidden-->
-            <a class="md:mt-0 mt-24" href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="discography.html">Discography</a>
-            <a href="contacts.html">Contacts</a>
+            <a class="md:mt-0 md:mr-0 mt-24 mr-24 hover:text-violet-500" href="index.html">Home</a>
+            <a class="md:mr-0 mr-24 hover:text-violet-500" href="about.html">About</a>
+            <a class="md:mr-0 mr-24 hover:text-violet-500" href="discography.html">Discography</a>
+            <a class="md:mr-0 mr-24 hover:text-violet-500" href="contacts.html">Contacts</a>
         </div>
         <div id="menu-button" class="md:hidden">
             <img src="svgs/menu.svg" alt="hambuger menu icon" height="36" width="36">

@@ -7,6 +7,9 @@ module.exports = {
         lycan: "Lycanthrope",
         mironta: "Mironta",
       },
+      fontSize: {
+        inheritSize: "inherit",
+      },
     },
   },
   plugins: [],
