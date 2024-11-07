@@ -23,66 +23,47 @@
     <link rel="stylesheet" href="/css/style.css">
     <script src="js/index.js"></script>
 
-    <!--Favicons-->
-    <!--Use https://realfavicongenerator.net/ to generate and download your favicons-->
-
-    <!--<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">-->
-    <!--<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v1">-->
-    <!--<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">-->
-    <!--<link rel="manifest" href="/site.webmanifest">-->
-    <!--<meta name="msapplication-TileColor" content="#da532c">-->
-    <!--<meta name="theme-color" content="#ffffff">-->
-
-    <!-- Preload -->
-    <!--<link rel="preload" as="image" href="/images/landing-m.webp">-->
-    <!--<link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-regular.woff2" crossorigin>-->
-    <!--<link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-700.woff2" crossorigin>-->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
     <title>Detached band</title>
 </head>
 
 <body class="flex flex-col items-center text-white bg-[url('/images/cloud.webp')] bg-cover bg-no-repeat">
-    <header class="flex justify-between font-lycan 2xl:text-5xl xl:text-4xl md:text-3xl text-5xl mt-10 w-8/12">
-        <a href="index.html">Detached</a>
+    <header
+        class="flex justify-between items-center font-lycan 2xl:text-5xl xl:text-4xl md:text-3xl text-5xl mt-10 w-8/12">
+        <a class="hover:text-violet-500" href="index.html">Detached</a>
         <div id="menu"
-            class="md:flex md:flex-row md:w-auto md:h-auto md:relative md:gap-5 flex flex-col hidden w-full absolute top-0 right-0 h-screen items-end gap-10 z-10"
-            style="backdrop-filter: blur(10px);">
-            <!--transition -->
-            <!--translate-x-80 hidden-->
-            <a class="md:mt-0 md:mr-0 mt-24 mr-24 hover:text-violet-500" href="index.html">Home</a>
+            class="md:flex md:flex-row md:w-auto md:h-auto md:relative md:gap-5 backdrop-blur-md flex flex-col hidden w-full absolute top-0 right-0 h-screen items-end gap-10 z-10">
+            <a class="md:mt-0 md:mr-0 mt-24 mr-24 hover:text-violet-500 inline md:hidden lg:inline"
+                href="index.html">Home</a>
             <a class="md:mr-0 mr-24 hover:text-violet-500" href="about.html">About</a>
             <a class="md:mr-0 mr-24 hover:text-violet-500" href="discography.html">Discography</a>
             <a class="md:mr-0 mr-24 hover:text-violet-500" href="contacts.html">Contacts</a>
         </div>
-        /TODO this is also shit
-        <div id="menu-button" class="md:hidden">
-            <img src="svgs/menu.svg" alt="hambuger menu icon" height="36" width="36">
-        </div>
+        <img id="menu-button" class="md:hidden w-1/6" src="svgs/menu.svg" alt="hambuger menu icon">
     </header>
+    <!--/TODO do I even need this? Check the SEO in staging-->
     <picture class="flex justify-center w-8/12 mt-6">
         <source srcset="/images/band.png" media="(orientation: portrait)" />
-        /TODO maybe shit
-        <img src="/images/band-crop.png" alt="">
+        <img src="/images/band-crop.png" alt="detached band picture">
     </picture>
     <div
-        class="flex md:flex-col md:items-center gap-3 md:absolute 2xl:top-[150px] 2xl:right-[380px] lg:top-[120px] lg:right-[280px] md:top-[120px] md:right-[220px] flex-row mt-5 md:mt-0">
-
-        /TODO fix this shit
-        <a href="https://www.youtube.com/@detached.project/videos">
-            <img class="hidden xl:inline" src="svgs/buy_album.svg" alt="youtube redirect button" width="150"
-                height="150">
-            <img class="inline xl:hidden" src="svgs/buy_album.svg" alt="youtube redirect button" width="100"
-                height="100">
+        class="flex md:flex-col items-center justify-center gap-3 md:absolute 2xl:top-[150px] 2xl:right-[300px] lg:top-[120px] lg:right-[180px] md:top-[120px] md:right-[100px] flex-row mt-5 md:mt-0">
+        <a class="md:w-1/2 w-1/4 hover:shadow-lg hover:shadow-violet-500 rounded-2xl"
+            href="https://www.youtube.com/@detached.project/videos">
+            <img src="svgs/buy_album.svg" alt="youtube redirect button">
         </a>
-        /TODO fix this shit
-        <a href="https://www.youtube.com/@detached.project/videos">
-            <img class="hidden xl:inline" src="svgs/yt.svg" alt="youtube redirect button" width="72" height="72">
-            <img class="inline xl:hidden" src="svgs/yt.svg" alt="youtube redirect button" width="60" height="60">
+        <a class="md:w-1/3 w-[14%] hover:shadow-lg hover:shadow-violet-500 rounded-2xl"
+            href="https://www.youtube.com/@detached.project/videos">
+            <img src="svgs/yt.svg" alt="youtube redirect button">
         </a>
-        /TODO fix this shit
-        <a href="https://www.youtube.com/@detached.project/videos">
-            <img class="hidden xl:inline" src="svgs/spotify.svg" alt="youtube redirect button" width="60" height="60">
-            <img class="inline xl:hidden" src="svgs/spotify.svg" alt="youtube redirect button" width="40" height="40">
+        <a class="md:w-1/4 w-[14%] hover:shadow-lg hover:shadow-violet-500 rounded-full"
+            href="https://www.youtube.com/@detached.project/videos">
+            <img src="svgs/spotify.svg" alt="youtube redirect button">
         </a>
     </div>
     <section class="flex flex-col items-center w-8/12 mt-20">
@@ -122,9 +103,12 @@
                     <h3> <strong> Live music </strong> </h3>
                     <div class="flex justify-between xl:text-3xl text-xl">
                         <div class="flex gap-2 w-1/2 items-center justify-start">
-                            <img src="svgs/spotify.svg" alt="youtube redirect button" class="lg:w-1/3 sm:w-1/5 w-1/3">
-                            <img src="svgs/yt.svg" alt="youtube redirect button" class="lg:w-1/3 sm:w-1/5 w-1/3">
-                            <img src="svgs/buy.svg" alt="youtube redirect button" class="lg:w-1/3 sm:w-1/5 w-1/3">
+                            <img src="svgs/spotify.svg" alt="youtube redirect button"
+                                class="lg:w-1/3 sm:w-1/5 w-1/3 hover:shadow-lg hover:shadow-violet-700 rounded-full">
+                            <img src="svgs/yt.svg" alt="youtube redirect button"
+                                class="lg:w-1/3 sm:w-1/5 w-1/3 hover:shadow-lg hover:shadow-violet-700 rounded-2xl">
+                            <img src="svgs/buy.svg" alt="youtube redirect button"
+                                class="lg:w-1/3 sm:w-1/5 w-1/3 hover:shadow-lg hover:shadow-violet-700 rounded-2xl">
                         </div>
                         <div class="flex flex-col">
                             <span><strong>06/10</strong></span>
@@ -137,9 +121,12 @@
                     <h3> <strong> Live music </strong> </h3>
                     <div class="flex justify-between xl:text-3xl text-xl gap-5">
                         <div class="flex gap-2 w-1/2 items-center justify-start">
-                            <img src="svgs/spotify.svg" alt="youtube redirect button" class="lg:w-1/3 sm:w-1/5 w-1/3">
-                            <img src="svgs/yt.svg" alt="youtube redirect button" class="lg:w-1/3 sm:w-1/5 w-1/3">
-                            <img src="svgs/save.svg" alt="youtube redirect button" class="lg:w-1/3 sm:w-1/5 w-1/3">
+                            <img src="svgs/spotify.svg" alt="youtube redirect button"
+                                class="lg:w-1/3 sm:w-1/5 w-1/3 hover:shadow-lg hover:shadow-violet-700 rounded-full">
+                            <img src="svgs/yt.svg" alt="youtube redirect button"
+                                class="lg:w-1/3 sm:w-1/5 w-1/3 hover:shadow-lg hover:shadow-violet-700 rounded-2xl">
+                            <img src="svgs/save.svg" alt="youtube redirect button"
+                                class="lg:w-1/3 sm:w-1/5 w-1/3 hover:shadow-lg hover:shadow-violet-700 rounded-2xl">
                         </div>
                         <div class="flex flex-col">
                             <span><strong>06/10</strong></span>
@@ -148,23 +135,24 @@
                     </div>
                 </div>
             </div>
-            /TODO fix this shit also
-            <div class="lg:w-1/2 w-full lg:mt-0 mt-6">
-                <img src="images/clock.png" alt="man with a clock in his hand inside a mirror">
-            </div>
+            <img class="lg:w-1/2 w-full lg:mt-0 mt-6" src="images/clock.png"
+                alt="picture of a man inside a mirror with a clock">
         </div>
     </section>
     <footer class="flex lg:flex-row flex-col w-8/12 justify-around font-mironta mt-24 text-xl">
         <div class="flex flex-col gap-2 items-center lg:mt-0 mt-10">
             <h4 class="mb-4"><strong>Social</strong></h4>
-            <img src="svgs/instagram.svg" alt="instagram logo" class="lg:w-1/2 sm:w-1/12 w-1/6">
+            <!--TODO get here their instagram link-->
+            <a class="lg:w-1/2 sm:w-1/12 w-1/6" href="">
+                <img src="svgs/instagram.svg" alt="instagram logo">
+            </a>
         </div>
         <div class="flex flex-col gap-2 items-center lg:mt-0 mt-10">
             <h4 class="mb-4"><strong>Navigation</strong></h4>
-            <a class="text-lg" href="index.html">Home</a>
-            <a class="text-lg" href="about.html">About</a>
-            <a class="text-lg" href="discography.html">Discography</a>
-            <a class="text-lg" href="contacts.html">Contacts</a>
+            <a class="text-lg hover:text-violet-500" href="index.html">Home</a>
+            <a class="text-lg hover:text-violet-500" href="about.html">About</a>
+            <a class="text-lg hover:text-violet-500" href="discography.html">Discography</a>
+            <a class="text-lg hover:text-violet-500" href="contacts.html">Contacts</a>
         </div>
         <div class="flex flex-col gap-2 items-center lg:mt-0 mt-10">
             <h4 class="mb-4"><strong>Contacts</strong></h4>
