@@ -1,1 +1,125 @@
-About page
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Swap our for actual link-->
+    <link rel="canonical" href="https://www.detached.it">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!--Social Media Display-->
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="/images/social.jpg" />
+    <meta property="og:image:secure_url" content="/images/social.jpg" />
+
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="js/index.js"></script>
+
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <title>Detached band</title>
+</head>
+
+<body class="flex flex-col items-center text-white bg-[url('/images/cloud.webp')] bg-cover bg-no-repeat">
+    <header
+        class="flex justify-between items-center font-lycan 2xl:text-5xl xl:text-4xl md:text-3xl text-5xl mt-10 w-8/12">
+        <a class="hover:text-violet-500" href="index.html">Detached</a>
+        <div id="menu"
+            class="md:flex md:flex-row md:w-auto md:h-auto md:relative md:gap-5 backdrop-blur-md flex flex-col hidden w-full absolute top-0 right-0 h-screen items-end gap-10 z-10">
+            <a class="md:mt-0 md:mr-0 mt-24 mr-24 hover:text-violet-500 inline md:hidden lg:inline"
+                href="index.html">Home</a>
+            <a class="md:mr-0 mr-24 hover:text-violet-500" href="about.html">About</a>
+            <a class="md:mr-0 mr-24 hover:text-violet-500" href="discography.html">Discography</a>
+            <a class="md:mr-0 mr-24 hover:text-violet-500" href="contacts.html">Contacts</a>
+        </div>
+        <img id="menu-button" class="md:hidden w-1/6" src="svgs/menu.svg" alt="hambuger menu icon">
+    </header>
+    <section class="flex-col flex items-center justify-between w-8/12 lg:flex-row">
+        <img src="images/riccardo.png" alt="picture of the singer: Riccardo">
+        <div class="flex flex-col w-full text-xl lg:w-6/12 lg:text-3xl ">
+            <h2 class="font-lycan text-3xl lg:text-5xl">
+                Riccardo Tioli
+            </h2>
+            <p class="font-mironta">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, ex possimus corrupti autem
+                reprehenderit quas rerum, exercitationem assumenda earum beatae aliquam blanditiis at? Quisquam unde
+                minima voluptatibus esse impedit nam?
+            </p>
+        </div>
+    </section>
+    <section class="flex-col flex items-center justify-between w-8/12 lg:flex-row">
+        <img src="images/tiziano.png" alt="picture of the guitarist: Tiziano">
+        <div class="flex flex-col w-full text-xl lg:w-6/12 lg:text-3xl ">
+            <h2 class="font-lycan text-3xl lg:text-5xl">
+                Tiziano Campagnoli
+            </h2>
+            <p class="font-mironta">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, ex possimus corrupti autem
+                reprehenderit quas rerum, exercitationem assumenda earum beatae aliquam blanditiis at? Quisquam unde
+                minima voluptatibus esse impedit nam?
+            </p>
+        </div>
+    </section>
+    <section class="flex-col flex items-center justify-between w-8/12 lg:flex-row">
+        <img src="images/valerio.png" alt="picture of the keyboarder: Valerio">
+        <div class="flex flex-col w-full text-xl lg:w-6/12 lg:text-3xl ">
+            <h2 class="font-lycan text-3xl lg:text-5xl">
+                Valerio Notari
+            </h2>
+            <p class="font-mironta">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, ex possimus corrupti autem
+                reprehenderit quas rerum, exercitationem assumenda earum beatae aliquam blanditiis at? Quisquam unde
+                minima voluptatibus esse impedit nam?
+            </p>
+        </div>
+    </section>
+    <section class="flex-col flex items-center justify-between w-8/12 lg:flex-row">
+        <img src="images/federico.png" alt="picture of the bass: Tioli">
+        <div class="flex flex-col w-full text-xl lg:w-6/12 lg:text-3xl ">
+            <h2 class="font-lycan text-3xl lg:text-5xl">
+                Federico Tioli
+            </h2>
+            <p class="font-mironta">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, ex possimus corrupti autem
+                reprehenderit quas rerum, exercitationem assumenda earum beatae aliquam blanditiis at? Quisquam unde
+                minima voluptatibus esse impedit nam?
+            </p>
+        </div>
+    </section>
+    <footer class="flex lg:flex-row flex-col w-8/12 justify-around font-mironta mt-24 text-xl">
+        <div class="flex flex-col gap-2 items-center lg:mt-0 mt-10">
+            <h4 class="mb-4"><strong>Social</strong></h4>
+            <!--TODO get here their instagram link-->
+            <a class="lg:w-1/2 sm:w-1/12 w-1/6" href="">
+                <img src="svgs/instagram.svg" alt="instagram logo">
+            </a>
+        </div>
+        <div class="flex flex-col gap-2 items-center lg:mt-0 mt-10">
+            <h4 class="mb-4"><strong>Navigation</strong></h4>
+            <a class="text-lg hover:text-violet-500" href="index.html">Home</a>
+            <a class="text-lg hover:text-violet-500" href="about.html">About</a>
+            <a class="text-lg hover:text-violet-500" href="discography.html">Discography</a>
+            <a class="text-lg hover:text-violet-500" href="contacts.html">Contacts</a>
+        </div>
+        <div class="flex flex-col gap-2 items-center lg:mt-0 mt-10">
+            <h4 class="mb-4"><strong>Contacts</strong></h4>
+            <span class="text-lg">email@gmail.com</span>
+            <span class="text-lg">+39 1234567890</span>
+            <span class="text-lg">Modena</span>
+        </div>
+    </footer>
+</body>
+
+</html>
