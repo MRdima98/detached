@@ -9,12 +9,12 @@
     <!--Swap our for actual link-->
     <link rel="canonical" href="https://www.detached.it">
 
-    <meta name="description" content="">
+    <meta name="description" content="Detached is a power metal band based in Italy.">
     <meta name="keywords" content="">
 
     <!--Social Media Display-->
     <meta property="og:title" content="Deatached band" />
-    <meta property="og:description" content="" />
+    <meta property="description" content="Detached is a power metal band based in Italy.">
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.detached.it" />
     <meta property="og:image" content="/images/band.png" />
@@ -34,22 +34,27 @@
 
 <body class="flex flex-col items-center text-white bg-[url('/images/cloud.webp')] bg-cover bg-no-repeat">
     <header
-        class="flex justify-between items-center font-lycan 2xl:text-5xl xl:text-4xl md:text-3xl text-5xl mt-10 w-8/12">
+        class="flex justify-between items-center font-lycan 2xl:text-5xl xl:text-4xl md:text-3xl text-5xl mt-10 sm:w-8/12 w-10/12">
         <a class="hover:text-violet-500" href="index.html">Detached</a>
         <div id="menu"
             class="md:flex md:flex-row md:w-auto md:h-auto md:relative md:gap-5 backdrop-blur-md flex flex-col hidden w-full absolute top-0 right-0 h-screen items-end gap-10 z-10">
-            <a class="md:mt-0 md:mr-0 mt-24 mr-24 hover:text-violet-500 inline md:hidden lg:inline"
+            <a class="md:mt-0 md:mr-0 mt-24 mr-12 hover:text-violet-500 inline md:hidden lg:inline"
                 href="index.html">Home</a>
-            <a class="md:mr-0 mr-24 hover:text-violet-500" href="about.html">About</a>
-            <a class="md:mr-0 mr-24 hover:text-violet-500" href="discography.html">Discography</a>
-            <a class="md:mr-0 mr-24 hover:text-violet-500" href="contacts.html">Contacts</a>
+            <a class="md:mr-0 mr-12 hover:text-violet-500" href="about.html">About</a>
+            <a class="md:mr-0 mr-12 hover:text-violet-500" href="discography.html">Discography</a>
+            <a class="md:mr-0 mr-12 hover:text-violet-500" href="contacts.html">Contacts</a>
         </div>
-        <img id="menu-button" class="md:hidden w-1/6" src="svgs/menu.svg" alt="hambuger menu icon">
+        <img id="menu-button" class="md:hidden w-1/6" src="svgs/menu.svg" alt="hambuger menu icon" width="800"
+            height="800">
     </header>
     <hr class="w-full border-white border-1 mt-6">
-    <section class="flex-col flex items-center justify-between w-8/12 lg:flex-row mt-16 gap-10">
-        <img class="lg:w-1/2 w-full" style="filter: brightness(150%);" src="images/cover.png"
-            alt="picture of the album cover">
+    <section class="flex-col flex items-center justify-between sm:w-8/12 w-10/12 lg:flex-row mt-16 gap-10">
+        <picture class="lg:w-1/2 w-full">
+            <source srcset="/images/cover-small.webp" media="(max-width: 600px)" />
+            <source srcset="/images/cover.webp" media="(min-width: 601px)" />
+            <img style="filter: brightness(150%);" src="images/cover.png" alt="picture of the album cover" width="750"
+                height="750">
+        </picture>
         <div class="flex flex-col w-full text-xl lg:w-6/12 lg:text-3xl ">
             <h2 class="font-lycan text-3xl lg:text-5xl">
                 New Album
@@ -61,25 +66,30 @@
                 minima voluptatibus esse impedit nam?
             </p>
             <div class="flex justify-around items-center gap-3 mt-5">
-                <a class="w-1/4 hover:shadow-lg hover:shadow-violet-500 rounded-2xl" href="WHERE">
-                    <img class="w-full" src="svgs/buy_album.svg" alt="youtube redirect button">
+                <a class="hover:shadow-lg hover:shadow-violet-500 rounded-2xl font-mironta bg-gradient-to-b from-buttonStartPurple to-buttonEndPurple p-4 border-white border-2"
+                    href="WHERE?">
+                    <strong>
+                        Buy album
+                    </strong>
                 </a>
                 <a class="w-1/5 hover:shadow-lg hover:shadow-violet-500 rounded-3xl"
                     href="https://www.youtube.com/@detached.project/videos">
-                    <img sclass="w-full" src="svgs/yt.svg" alt="youtube redirect button">
+                    <img sclass="w-full" src="svgs/yt.svg" alt="youtube redirect button" width="146" height="109">
                 </a>
                 <a class="w-1/5 hover:shadow-lg hover:shadow-violet-500 rounded-full"
                     href="https://open.spotify.com/artist/5bGEyHdZUS4e0q85OYVhOc?si=j0lbvvGwTCewd7vZ_24LkA">
-                    <img sclass="w-full" src="svgs/spotify.svg" alt="youtube redirect button">
+                    <img sclass="w-full" src="svgs/spotify.svg" alt="youtube redirect button" width="125" height="125">
                 </a>
             </div>
             <p class="font-mironta mt-6">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, ex possimus corrupti autem
+                <strong>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, ex possimus corrupti autem
+                </strong>
             </p>
         </div>
     </section>
 
-    <section class="flex-col flex items-center justify-between w-8/12 lg:flex-row mt-16 relative">
+    <section class="flex-col flex items-center justify-between sm:w-8/12 w-10/12 lg:flex-row mt-16 relative">
         <div class="lg:w-1/2 flex flex-col w-full text-xl lg:text-3xl lg:order-1 order-2 z-10 lg:absolute">
             <h2 class="font-lycan text-3xl lg:text-5xl">
                 Abstract
@@ -91,15 +101,19 @@
                 minima voluptatibus esse impedit nam?
             </p>
         </div>
-        <img class="lg:order-2 order-1 lg:ml-40" style="filter: contrast(50%); filter: brightness(200%);"
-            src="images/door.png" alt="picture of the album cover">
+        <picture class="lg:order-2 order-1 lg:ml-40">
+            <source srcset="/images/door-small.webp" media="(max-width: 600px)" />
+            <source srcset="/images/door.webp" media="(min-width: 601px)" />
+            <img style="filter: contrast(50%); filter: brightness(200%);" src="images/door.webp"
+                alt="picture of the album cover" width="1200" height="1200">
+        </picture>
     </section>
 
-    <footer class="flex lg:flex-row flex-col w-8/12 justify-around font-mironta mt-24 text-xl">
+    <footer class="flex lg:flex-row flex-col sm:w-8/12 w-10/12 justify-around font-mironta mt-24 text-xl">
         <div class="flex flex-col gap-2 items-center lg:mt-0 mt-10">
             <h4 class="mb-4"><strong>Social</strong></h4>
             <a class="lg:w-1/2 sm:w-1/12 w-1/6" href="https://www.instagram.com/detached.band?igsh=cWtjZXRyaXdvdm01">
-                <img src="svgs/instagram.svg" alt="instagram logo">
+                <img src="svgs/instagram.svg" alt="instagram logo" width="49" height="49">
             </a>
         </div>
         <div class="flex flex-col gap-2 items-center lg:mt-0 mt-10">
