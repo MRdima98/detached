@@ -44,25 +44,31 @@
             <a class="md:mr-0 mr-12 hover:text-violet-500" href="discography.html">Discography</a>
             <a class="md:mr-0 mr-12 hover:text-violet-500" href="contacts.html">Contacts</a>
         </div>
-        <img id="menu-button" class="md:hidden w-1/6" src="svgs/menu.svg" alt="hambuger menu icon">
+        <img id="menu-button" class="md:hidden w-1/6" src="svgs/menu.svg" alt="hambuger menu icon" width="800"
+            height="800">
     </header>
     <hr class="w-full border-white border-1 mt-6">
 
     <section class="lg:flex-row md:w-8/12 w-10/12 flex flex-col items-center mt-24 font-mironta text-xl">
         <!--TODO test it on the actual website-->
-        <form class="lg:w-1/2 flex flex-col items-center gap-5 w-full" action="">
-            <input class="h-12 rounded-lg w-3/4 p-2 text-black" type="text" placeholder="Name">
-            <input class="h-12 rounded-lg w-3/4 p-2 text-black" type="text" placeholder="Email">
-            <input class="h-12 rounded-lg w-3/4 p-2 text-black" type="text" placeholder="Phone number">
-            <textarea class="h-48 rounded-lg w-3/4 p-2 resize-none text-black" placeholder="Text" name=""
-                id=""></textarea>
+        <form class="lg:w-1/2 flex flex-col items-center gap-5 w-full" name="message" netlify>
+            <input class="h-12 rounded-lg w-3/4 p-2 text-black" type="text" placeholder="Name" name="name">
+            <input class="h-12 rounded-lg w-3/4 p-2 text-black" type="text" placeholder="Email" name="email">
+            <input class="h-12 rounded-lg w-3/4 p-2 text-black" type="text" placeholder="Phone number"
+                name="phone number">
+            <textarea class="h-48 rounded-lg w-3/4 p-2 resize-none text-black" placeholder="Text"
+                name="text"></textarea>
             <button class="w-3/4 flex justify-end">
-                <img class="2xl:w-1/3 w-1/2 hover:shadow-lg hover:shadow-violet-500 rounded-2xl" src="images/save.png"
-                    alt="save button">
+                <a class="hover:shadow-lg hover:shadow-violet-500 rounded-2xl font-mironta bg-gradient-to-b from-buttonStartPurple to-buttonEndPurple p-2 border-white border-2 text-white"
+                    href="WHERE?">
+                    <strong>
+                        Send message
+                    </strong>
+                </a>
             </button>
         </form>
-        <div class="flex-col items-center flex lg:w-1/2 w-full">
-            <img class="lg:w-1/2 w-3/4" src="images/logo.png" alt="icona del gruppo">
+        <div class="flex-col items-center flex lg:w-1/2 w-full lg:text-lg">
+            <img class="lg:w-1/2 w-3/4" src="images/logo.webp" alt="icona del gruppo" width="400" height="400">
             <div class="items-center lg:w-1/2 flex w-3/4 gap-5">
                 <div class="flex flex-col w-1/2 gap-2">
                     <span>Email:</span>
@@ -79,22 +85,33 @@
         </div>
     </section>
 
-    <footer class="flex lg:flex-row flex-col w-8/12 justify-around font-mironta mt-24 text-xl">
-        <div class="flex flex-col gap-2 items-center lg:mt-0 mt-10">
-            <h4 class="mb-4"><strong>Social</strong></h4>
-            <a class="lg:w-1/2 sm:w-1/12 w-1/6" href="https://www.instagram.com/detached.band?igsh=cWtjZXRyaXdvdm01">
-                <img src="svgs/instagram.svg" alt="instagram logo">
+    <footer
+        class="flex sticky bottom-0 lg:flex-row flex-col sm:w-8/12 w-10/12 justify-around font-mironta mt-24 text-xl">
+        <div class="flex flex-col gap-2 items-center mb-10">
+            <div>
+                <strong>Social</strong>
+                <hr class="w-full border-white border-1 mt-2">
+            </div>
+            <a class="lg:w-1/2 sm:w-1/12 w-1/6 flex justify-center"
+                href="https://www.instagram.com/detached.band?igsh=cWtjZXRyaXdvdm01">
+                <img src="svgs/instagram.svg" alt="instagram logo" width="49" height="49">
             </a>
         </div>
-        <div class="flex flex-col gap-2 items-center lg:mt-0 mt-10">
-            <h4 class="mb-4"><strong>Navigation</strong></h4>
+        <div class="flex flex-col gap-2 items-center mb-10">
+            <div>
+                <strong>Navigation</strong>
+                <hr class="w-full border-white border-1 mt-2">
+            </div>
             <a class="text-lg hover:text-violet-500" href="index.html">Home</a>
             <a class="text-lg hover:text-violet-500" href="about.html">About</a>
             <a class="text-lg hover:text-violet-500" href="discography.html">Discography</a>
             <a class="text-lg hover:text-violet-500" href="contacts.html">Contacts</a>
         </div>
-        <div class="flex flex-col gap-2 items-center lg:mt-0 mt-10">
-            <h4 class="mb-4"><strong>Contacts</strong></h4>
+        <div class="flex flex-col gap-2 items-center mb-10">
+            <div>
+                <strong>Contacts</strong>
+                <hr class="w-full border-white border-1 mt-2">
+            </div>
             <a class="hover:text-violet-500" href="mailto:detached@gmail.com">detached@gmail.com</a>
             <a class="hover:text-violet-500" href="tel:123-456-7890">123-779-4407</a>
             <span class="text-lg">Modena</span>
