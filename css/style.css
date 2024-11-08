@@ -1035,12 +1035,20 @@ body {
     position: absolute;
   }
 
+  .lg\:sticky {
+    position: sticky;
+  }
+
   .lg\:right-\[180px\] {
     right: 180px;
   }
 
   .lg\:top-\[120px\] {
     top: 120px;
+  }
+
+  .lg\:bottom-0 {
+    bottom: 0px;
   }
 
   .lg\:order-1 {
