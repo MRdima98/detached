@@ -29,6 +29,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
 
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.5.0/lite-youtube.js"></script>
+
     <title>Detached band</title>
 </head>
 
@@ -71,12 +73,7 @@
         <h2 class="font-lycan w-full lg:text-5xl text-3xl">
             Youtube channel
         </h2>
-        <div class="relative w-full pt-[56.25%]">
-            <iframe class="absolute top-0 left-0 bottom-0 right-0 w-full h-full border-none"
-                src="https://www.youtube.com/embed/MxPLPgiNzrw" title="Detached - Help (Official Video)" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
-        </div>
+        <lite-youtube videoid="MxPLPgiNzrw"></lite-youtube>
     </section>
     <section class="flex flex-col w-8/12 mt-24">
         <h2 class="font-lycan lg:text-5xl text-3xl">
