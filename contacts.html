@@ -48,26 +48,32 @@
     </header>
     <hr class="w-full border-white border-1 mt-6">
 
-    <section class="flex flex-col lg:flex-row items-center w-8/12 mt-24 font-mironta text-xl">
-        <form class="flex flex-col items-center gap-5 lg:w-1/2 w-full" action="">
+    <section class="lg:flex-row md:w-8/12 w-10/12 flex flex-col items-center mt-24 font-mironta text-xl">
+        <!--TODO test it on the actual website-->
+        <form class="lg:w-1/2 flex flex-col items-center gap-5 w-full" action="">
             <input class="h-12 rounded-lg w-3/4 p-2 text-black" type="text" placeholder="hello">
             <input class="h-12 rounded-lg w-3/4 p-2 text-black" type="text" placeholder="hello">
             <input class="h-12 rounded-lg w-3/4 p-2 text-black" type="text" placeholder="hello">
             <textarea class="h-48 rounded-lg w-3/4 p-2 resize-none text-black" placeholder="hello" name=""
                 id=""></textarea>
+            <button class="w-3/4 flex justify-end">
+                <img class="2xl:w-1/3 w-1/2 hover:shadow-lg hover:shadow-violet-500 rounded-2xl" src="images/save.png"
+                    alt="save button">
+            </button>
         </form>
-        <div class="flex justify-center w-1/2">
-            <img class="w-1/2" src="images/logo.png" alt="icona del gruppo">
-            <div class="flex items-center lg:w-1/2 w-full">
-                <div class="flex flex-col w-1/2">
+        <div class="flex-col items-center flex lg:w-1/2 w-full">
+            <img class="lg:w-1/2 w-3/4" src="images/logo.png" alt="icona del gruppo">
+            <div class="items-center lg:w-1/2 flex w-3/4 gap-5">
+                <div class="flex flex-col w-1/2 gap-2">
                     <span>Email:</span>
                     <span>Phone:</span>
-                    <span>Instagram:</span>
+                    <span class="">Instagram:</span>
                 </div>
-                <div class="flex flex-col w-1/2">
-                    <span>detached@gmail.com</span>
-                    <span>1234567890</span>
-                    <span>detached.band</span>
+                <div class="flex flex-col w-1/2 gap-2">
+                    <a class="hover:text-violet-500" href="mailto:detached@gmail.com">detached@gmail.com</a>
+                    <a class="hover:text-violet-500" href="tel:123-456-7890">123-779-4407</a>
+                    <a class="hover:text-violet-500"
+                        href="https://www.instagram.com/detached.band?igsh=cWtjZXRyaXdvdm01">@detached.band</a>
                 </div>
             </div>
         </div>
@@ -92,6 +98,8 @@
             <h4 class="mb-4"><strong>Contacts</strong></h4>
             <span class="text-lg">email@gmail.com</span>
             <span class="text-lg">+39 1234567890</span>
+            <a class="hover:text-violet-500" href="mailto:detached@gmail.com">detached@gmail.com</a>
+            <a class="hover:text-violet-500" href="tel:123-456-7890">123-779-4407</a>
             <span class="text-lg">Modena</span>
         </div>
     </footer>
