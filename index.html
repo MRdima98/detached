@@ -9,12 +9,12 @@
     <!--Swap our for actual link-->
     <link rel="canonical" href="https://www.detached.it">
 
-    <meta name="description" content="">
+    <meta name="description" content="Detached is a power metal band based in Italy.">
     <meta name="keywords" content="">
 
     <!--Social Media Display-->
     <meta property="og:title" content="Deatached band" />
-    <meta property="og:description" content="" />
+    <meta property="og:description" content="Detached is a power metal band based in Italy." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.detached.it" />
     <meta property="og:image" content="/images/band.png" />
@@ -32,7 +32,8 @@
     <title>Detached band</title>
 </head>
 
-<body class="flex flex-col items-center text-white bg-[url('/images/cloud.webp')] bg-cover bg-no-repeat">
+<body
+    class="flex flex-col items-center text-white sm:bg-[url('/images/cloud.webp')] bg-[url('/images/cloud-small.webp')] bg-cover bg-no-repeat">
     <header
         class="flex justify-between items-center font-lycan 2xl:text-5xl xl:text-4xl md:text-3xl text-5xl mt-10 w-8/12">
         <a class="hover:text-violet-500" href="index.html">Detached</a>
@@ -48,8 +49,9 @@
     </header>
     <!--/TODO do I even need this? Check the SEO in staging-->
     <picture class="flex justify-center w-8/12 mt-6">
-        <source srcset="/images/band.png" media="(orientation: portrait)" />
-        <img src="/images/band-crop.png" alt="detached band picture">
+        <source srcset="/images/band-small.webp" media="(max-width: 600px)" />
+        <source srcset="/images/band.webp" media="(min-width: 601px)" />
+        <img src="/images/band.webp" alt="detached band picture">
     </picture>
     <div
         class="flex md:flex-col items-center justify-center gap-3 md:absolute 2xl:top-[150px] 2xl:right-[300px] lg:top-[120px] lg:right-[180px] md:top-[120px] md:right-[100px] flex-row mt-5 md:mt-0">
@@ -71,10 +73,9 @@
         </h2>
         <div class="relative w-full pt-[56.25%]">
             <iframe class="absolute top-0 left-0 bottom-0 right-0 w-full h-full border-none"
-                src="https://www.youtube.com/embed/MxPLPgiNzrw?wmode=opaque" title="Detached - Help (Official Video)"
-                frameborder="0"
+                src="https://www.youtube.com/embed/MxPLPgiNzrw" title="Detached - Help (Official Video)" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
         </div>
     </section>
     <section class="flex flex-col w-8/12 mt-24">
