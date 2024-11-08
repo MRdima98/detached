@@ -919,6 +919,36 @@ body {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+@media (min-width: 400px) {
+  .phone\:order-1 {
+    order: 1;
+  }
+
+  .phone\:order-2 {
+    order: 2;
+  }
+
+  .phone\:order-none {
+    order: 0;
+  }
+
+  .phone\:w-1\/2 {
+    width: 50%;
+  }
+
+  .phone\:w-1\/3 {
+    width: 33.333333%;
+  }
+
+  .phone\:flex-row {
+    flex-direction: row;
+  }
+
+  .phone\:flex-col {
+    flex-direction: column;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:w-1\/12 {
     width: 8.333333%;
@@ -926,6 +956,10 @@ body {
 
   .sm\:w-1\/5 {
     width: 20%;
+  }
+
+  .sm\:w-8\/12 {
+    width: 66.666667%;
   }
 
   .sm\:bg-\[url\(\'\/images\/cloud\.webp\'\)\] {

@@ -14,6 +14,9 @@ module.exports = {
       fontSize: {
         inheritSize: "inherit",
       },
+      screens: {
+        phone: "400px",
+      },
     },
   },
   plugins: [],
