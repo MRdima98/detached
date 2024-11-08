@@ -34,7 +34,7 @@
 
 <body class="flex flex-col items-center text-white bg-[url('/images/cloud.webp')] bg-cover bg-no-repeat">
     <header
-        class="flex justify-between items-center font-lycan 2xl:text-5xl xl:text-4xl md:text-3xl text-5xl mt-10 w-full">
+        class="flex justify-between items-center font-lycan 2xl:text-5xl xl:text-4xl md:text-3xl text-5xl mt-10 w-8/12">
         <a class="hover:text-violet-500" href="index.html">Detached</a>
         <div id="menu"
             class="md:flex md:flex-row md:w-auto md:h-auto md:relative md:gap-5 backdrop-blur-md flex flex-col hidden w-full absolute top-0 right-0 h-screen items-end gap-10 z-10">
@@ -44,12 +44,18 @@
             <a class="md:mr-0 mr-24 hover:text-violet-500" href="discography.html">Discography</a>
             <a class="md:mr-0 mr-24 hover:text-violet-500" href="contacts.html">Contacts</a>
         </div>
-        <img id="menu-button" class="md:hidden w-1/6" src="svgs/menu.svg" alt="hambuger menu icon">
+        <img id="menu-button" class="md:hidden w-1/6" src="svgs/menu.svg" alt="hambuger menu icon" width="800"
+            height="800">
     </header>
     <hr class="w-full border-white border-1 mt-6">
+
     <!--TODO this pictures are ass, fix this-->
     <section class="flex-col flex items-center justify-between w-8/12 lg:flex-row gap-10">
-        <img class="lg:w-5/12 w-9/12" src="images/riccardo.webp" alt="picture of the singer: Riccardo">
+        <picture class="lg:w-5/12 w-9/12">
+            <source srcset="/images/riccardo-small.webp" media="(max-width: 600px)" />
+            <source srcset="/images/riccardo.webp" media="(min-width: 601px)" />
+            <img src="images/riccardo.webp" alt="picture of the singer: Riccardo" width="876" height="1480">
+        </picture>
         <div class="flex flex-col w-full text-xl lg:w-1/2 lg:text-3xl ">
             <h2 class="font-lycan text-3xl lg:text-5xl">
                 Riccardo Tioli
@@ -62,7 +68,11 @@
         </div>
     </section>
     <section class="flex-col flex items-center justify-between w-8/12 lg:flex-row">
-        <img class="lg:w-5/12 w-9/12" src="images/tiziano.webp" alt="picture of the guitarist: Tiziano">
+        <picture class="lg:w-5/12 w-9/12">
+            <source srcset="/images/tiziano-small.webp" media="(max-width: 600px)" />
+            <source srcset="/images/tiziano.webp" media="(min-width: 601px)" />
+            <img src="images/tiziano.webp" alt="picture of the singer: Riccardo" width="876" height="1480">
+        </picture>
         <div class="flex flex-col w-full text-xl lg:w-6/12 lg:text-3xl ">
             <h2 class="font-lycan text-3xl lg:text-5xl">
                 Tiziano Campagnoli
@@ -75,7 +85,11 @@
         </div>
     </section>
     <section class="flex-col flex items-center justify-between w-8/12 lg:flex-row">
-        <img class="lg:w-5/12 w-9/12" src="images/valerio.webp" alt="picture of the keyboarder: Valerio">
+        <picture class="lg:w-5/12 w-9/12">
+            <source srcset="/images/valerio-small.webp" media="(max-width: 600px)" />
+            <source srcset="/images/valerio.webp" media="(min-width: 601px)" />
+            <img src="images/valerio.webp" alt="picture of the singer: Riccardo" width="876" height="1480">
+        </picture>
         <div class="flex flex-col w-full text-xl lg:w-6/12 lg:text-3xl ">
             <h2 class="font-lycan text-3xl lg:text-5xl">
                 Valerio Notari
@@ -88,7 +102,11 @@
         </div>
     </section>
     <section class="flex-col flex items-center justify-between w-8/12 lg:flex-row">
-        <img class="lg:w-5/12 w-9/12" src="images/federico.webp" alt="picture of the bass: Tioli">
+        <picture class="lg:w-5/12 w-9/12">
+            <source srcset="/images/federico-small.webp" media="(max-width: 600px)" />
+            <source srcset="/images/federico.webp" media="(min-width: 601px)" />
+            <img src="images/federico.webp" alt="picture of the singer: Riccardo" width="876" height="1480">
+        </picture>
         <div class="flex flex-col w-full text-xl lg:w-6/12 lg:text-3xl ">
             <h2 class="font-lycan text-3xl lg:text-5xl">
                 Federico Tioli
@@ -104,7 +122,7 @@
         <div class="flex flex-col gap-2 items-center lg:mt-0 mt-10">
             <h4 class="mb-4"><strong>Social</strong></h4>
             <a class="lg:w-1/2 sm:w-1/12 w-1/6" href="https://www.instagram.com/detached.band?igsh=cWtjZXRyaXdvdm01">
-                <img src="svgs/instagram.svg" alt="instagram logo">
+                <img src="svgs/instagram.svg" alt="instagram logo" width="49" height="49">
             </a>
         </div>
         <div class="flex flex-col gap-2 items-center lg:mt-0 mt-10">
