@@ -706,6 +706,18 @@ video {
   width: 100%;
 }
 
+.w-\[100px\] {
+  width: 100px;
+}
+
+.w-\[300px\] {
+  width: 300px;
+}
+
+.w-\[180\] {
+  width: 180;
+}
+
 .resize-none {
   resize: none;
 }
@@ -1111,6 +1123,10 @@ body {
 }
 
 @media (min-width: 1280px) {
+  .xl\:w-\[300px\] {
+    width: 300px;
+  }
+
   .xl\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
