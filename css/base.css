@@ -5,10 +5,16 @@
 @layer base {
   @font-face {
     font-family: 'Lycanthrope';
-    src: url("/fonts/Lycanthrope.ttf");
+    src: url("/fonts/Lycanthrope.woff2");
+    font-display: swap;
   }
   @font-face {
     font-family: 'Mironta';
-    src: url("/fonts/Mironta.ttf");
+    src: url("/fonts/Mironta.woff2");
+    font-display: swap;
   }
+}
+
+body {
+  font-family: "Open Sans Regular", Helvetica, Arial, Sans-Serif;
 }
