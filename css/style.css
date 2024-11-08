@@ -590,10 +590,6 @@ video {
   top: 0px;
 }
 
-.top-10 {
-  top: 2.5rem;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -618,6 +614,10 @@ video {
   margin-top: 2.5rem;
 }
 
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .mt-20 {
   margin-top: 5rem;
 }
@@ -634,34 +634,6 @@ video {
   margin-top: 1.5rem;
 }
 
-.mt-12 {
-  margin-top: 3rem;
-}
-
-.mt-16 {
-  margin-top: 4rem;
-}
-
-.ml-\[300px\] {
-  margin-left: 300px;
-}
-
-.ml-0 {
-  margin-left: 0px;
-}
-
-.mt-80 {
-  margin-top: 20rem;
-}
-
-.mt-96 {
-  margin-top: 24rem;
-}
-
-.ml-40 {
-  margin-left: 10rem;
-}
-
 .inline {
   display: inline;
 }
@@ -676,6 +648,14 @@ video {
 
 .h-1\/4 {
   height: 25%;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.h-48 {
+  height: 12rem;
 }
 
 .h-full {
@@ -702,6 +682,10 @@ video {
   width: 16.666667%;
 }
 
+.w-3\/4 {
+  width: 75%;
+}
+
 .w-8\/12 {
   width: 66.666667%;
 }
@@ -714,16 +698,8 @@ video {
   width: 100%;
 }
 
-.w-6\/12 {
-  width: 50%;
-}
-
-.w-\[125\%\] {
-  width: 125%;
-}
-
-.w-10\/12 {
-  width: 83.333333%;
+.resize-none {
+  resize: none;
 }
 
 .flex-row {
@@ -732,10 +708,6 @@ video {
 
 .flex-col {
   flex-direction: column;
-}
-
-.items-start {
-  align-items: flex-start;
 }
 
 .items-end {
@@ -778,10 +750,6 @@ video {
   gap: 1.25rem;
 }
 
-.gap-\[-10\] {
-  gap: -10;
-}
-
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -790,8 +758,8 @@ video {
   border-radius: 9999px;
 }
 
-.border-2 {
-  border-width: 2px;
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .border-none {
@@ -825,6 +793,10 @@ video {
 
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .p-6 {
@@ -868,11 +840,6 @@ video {
   line-height: 1.75rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -889,18 +856,6 @@ video {
 
 .backdrop-blur-md {
   --tw-backdrop-blur: blur(12px);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-}
-
-.backdrop-brightness-200 {
-  --tw-backdrop-brightness: brightness(2);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-}
-
-.backdrop-contrast-50 {
-  --tw-backdrop-contrast: contrast(.5);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
@@ -1028,20 +983,12 @@ video {
     order: 2;
   }
 
-  .lg\:mt-0 {
-    margin-top: 0px;
-  }
-
-  .lg\:ml-0 {
-    margin-left: 0px;
-  }
-
-  .lg\:ml-80 {
-    margin-left: 20rem;
-  }
-
   .lg\:ml-40 {
     margin-left: 10rem;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px;
   }
 
   .lg\:inline {
@@ -1064,10 +1011,6 @@ video {
     width: 50%;
   }
 
-  .lg\:w-full {
-    width: 100%;
-  }
-
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -1076,14 +1019,14 @@ video {
     align-items: flex-start;
   }
 
-  .lg\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 
