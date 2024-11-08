@@ -50,7 +50,6 @@
     <hr class="w-full border-white border-1 mt-6">
 
     <section class="lg:flex-row md:w-8/12 w-10/12 flex flex-col items-center mt-24 font-mironta text-xl">
-        <!--TODO test it on the actual website-->
         <form class="lg:w-1/2 flex flex-col items-center gap-5 w-full" name="message" netlify>
             <input class="h-12 rounded-lg w-3/4 p-2 text-black" type="text" placeholder="Name" name="name">
             <input class="h-12 rounded-lg w-3/4 p-2 text-black" type="text" placeholder="Email" name="email">
@@ -59,12 +58,10 @@
             <textarea class="h-48 rounded-lg w-3/4 p-2 resize-none text-black" placeholder="Text"
                 name="text"></textarea>
             <button class="w-3/4 flex justify-end">
-                <a class="hover:shadow-lg hover:shadow-violet-500 rounded-2xl font-mironta bg-gradient-to-b from-buttonStartPurple to-buttonEndPurple p-2 border-white border-2 text-white"
-                    href="WHERE?">
-                    <strong>
-                        Send message
-                    </strong>
-                </a>
+                <strong
+                    class="hover:shadow-lg hover:shadow-violet-500 rounded-2xl font-mironta bg-gradient-to-b from-buttonStartPurple to-buttonEndPurple p-2 border-white border-2 text-white">
+                    Send message
+                </strong>
             </button>
         </form>
         <div class="flex-col items-center flex lg:w-1/2 w-full lg:text-lg">
